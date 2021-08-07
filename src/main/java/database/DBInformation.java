@@ -15,8 +15,6 @@ public class DBInformation {
             this.password =       "password";
 
         }
-
-
     }
 
     public String getDatabase() {

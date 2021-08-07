@@ -6,7 +6,7 @@ on:
       - main
       - master
 jobs:
-  # this runs tests without cache, is slower
+  ## Starting Docker-DB
   docker:
     runs-on: ubuntu-latest
     steps:
@@ -16,9 +16,9 @@ jobs:
     - name: Start containers
       run: docker-compose -f "docker-compose.yml" up -d --build
 
-  test-bare:
+  test:
+    ## Wait for the DB-Cointainer to start and run Test
     runs-on: ubuntu-latest
-    ## Wait for the DB-Cointainer to start
     needs: docker
     steps:
       - uses: actions/checkout@v2
@@ -33,6 +33,7 @@ jobs:
         run: ./gradlew test
 
   shutdowndocker:
+    ## Wait for Test's an shutdown
     timeout-minutes: 0.1
     runs-on: ubuntu-latest
     needs: [docker,test-bare]
