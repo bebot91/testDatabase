@@ -10,7 +10,7 @@ public class DBInformation {
     public DBInformation( boolean isDockered) {
         if (isDockered){
             this.database =       "User";
-            this.urldb =          "jdbc:mysql://localhost:3307/"+database;
+            this.urldb =          "jdbc:mysql://0.0.0.0:3307/"+database;
             this.user =           "testuser";
             this.password =       "password";
 
