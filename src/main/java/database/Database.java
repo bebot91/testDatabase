@@ -9,9 +9,15 @@ import java.util.List;
 public class Database {
 
     private static boolean isDockered = false;
-    private static DBInformation db = new DBInformation(isDockered);
+    private static DBInformation db;
+
+
+    public Database(boolean isDockered) {
+        this.isDockered = isDockered;
+    }
 
     public static List selectQuery(String query) throws SQLException {
+        db = new DBInformation(isDockered);
         try {
             Class.forName("com.mysql.jdbc.Driver");
         } catch (ClassNotFoundException e) {
@@ -25,6 +31,7 @@ public class Database {
     }
 
     public static int       executeDB(String query) throws SQLException {
+        db = new DBInformation(isDockered);
         try {
             Class.forName("com.mysql.jdbc.Driver");
         } catch (ClassNotFoundException e) {
@@ -45,6 +52,7 @@ public class Database {
     }
 
     public static ResultSet selectDB(String query,Connection con) throws SQLException {
+        db = new DBInformation(isDockered);
         try {
             Statement statement = con.createStatement();
             return statement.executeQuery(query);

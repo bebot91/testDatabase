@@ -7,7 +7,7 @@ import java.util.List;
 public class TestCall {
 
     private static String query;
-    private static Database db = new Database();
+    private static Database db = new Database(true);
     private static List<List> qresult = new ArrayList<>();
 
     public static boolean isConnected() {

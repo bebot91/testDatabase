@@ -6,7 +6,7 @@ import java.util.List;
 
 public class DatabaseCall {
 
-    private static Database db = new Database();
+    private static Database db = new Database(false);
     private static List<List> tasks = new ArrayList<>();
 
 
