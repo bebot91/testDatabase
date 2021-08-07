@@ -36,7 +36,7 @@ jobs:
     ## Wait for Test's an shutdown
     timeout-minutes: 0.1
     runs-on: ubuntu-latest
-    needs: [docker,test-bare]
+    needs: [docker,test]
     steps:
       - name: Stop containers
         if: always()
