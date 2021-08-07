@@ -1,4 +1,5 @@
-import Database.TestCall;
+
+import database.TestCall;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -20,6 +21,7 @@ public class DatabaseTest {
     @DisplayName("Teste Ob Datenbankverbindung möglich")
     public void testConnection (){
         // Hier wird getestet, on die Verbindung möglich ist.
+
         TestCall tcall = new TestCall();
         assertTrue(tcall.isConnected(),"false");
 

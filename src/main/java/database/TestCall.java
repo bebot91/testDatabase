@@ -1,6 +1,4 @@
-package Database;
-
-import database.Database;
+package database;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
