@@ -16,9 +16,6 @@ jobs:
     - name: Start containers
       run: docker-compose -f "docker-compose.yml" up -d --build
 
-    - name: Wait for Tests
-      timeout-minutes: 1
-
     - name: Stop containers
       if: always()
       run: docker-compose -f "docker-compose.yml" down
@@ -26,7 +23,7 @@ jobs:
   test-bare:
     runs-on: ubuntu-latest
     ## Wait for the DB-Cointainer to start
-    timeout-minutes: 1
+    needs: docker
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-java@v1
