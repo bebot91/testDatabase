@@ -6,11 +6,24 @@ on:
       - main
       - master
 jobs:
-
-
   # this runs tests without cache, is slower
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Start containers
+      run: docker-compose -f "docker-compose.yml" up -d --build
+
+    - name: Stop containers
+      if: always()
+      run: docker-compose -f "docker-compose.yml" down
+
   test-bare:
     runs-on: ubuntu-latest
+    ## Wait for the DB-Cointainer to start
+    timeout-minutes: 1
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-java@v1
