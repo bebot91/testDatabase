@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    testImplementation 'org.hamcrest:hamcrest-library:2.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.1'
+
+    compile 'mysql:mysql-connector-java:8.0.25'
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DatabaseTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-07-29T20:30:14" hostname="DESKTOP-EV6BB6M" time="0.397">
+  <properties/>
+  <testcase name="Teste Ob Datenbankverbindung mÃ¶glich" classname="DatabaseTest" time="0.362"/>
+  <testcase name="Teste Ob Datenbank initialisiert" classname="DatabaseTest" time="0.035"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+]]></system-err>
+</testsuite>
