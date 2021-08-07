@@ -16,6 +16,9 @@ jobs:
     - name: Start containers
       run: docker-compose -f "docker-compose.yml" up -d --build
 
+    - name: Wait for Tests
+      timeout-minutes: 1
+
     - name: Stop containers
       if: always()
       run: docker-compose -f "docker-compose.yml" down
