@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DatabaseTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-07T09:42:51" hostname="DESKTOP-EV6BB6M" time="0.376">
+<testsuite name="DatabaseTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-12T18:44:58" hostname="DESKTOP-EV6BB6M" time="0.392">
   <properties/>
-  <testcase name="Teste Ob Datenbankverbindung mÃ¶glich" classname="DatabaseTest" time="0.328"/>
-  <testcase name="Teste Ob Datenbank initialisiert" classname="DatabaseTest" time="0.047"/>
+  <testcase name="Teste Ob Datenbankverbindung mÃ¶glich" classname="DatabaseTest" time="0.343"/>
+  <testcase name="Teste Ob Datenbank initialisiert" classname="DatabaseTest" time="0.048"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
 ]]></system-err>
