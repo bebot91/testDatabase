@@ -40,4 +40,13 @@ public class TestCall {
         return result;
     }
 
+    public static boolean testProcedures() {
+        // Hier wird eine einfache Anfrage gesendet, ob die DB komplett initialisiert wurde
+        // Dabei muss innerhalb der Wertebereichstabelle Werte existieren
+        boolean result = false;
+
+        return result;
+    }
+
+
 }

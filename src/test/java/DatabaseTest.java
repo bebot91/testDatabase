@@ -36,5 +36,14 @@ public class DatabaseTest {
 
     }
 
+    @Test
+    @DisplayName("Teste Ob Datenbank initialisiert")
+    public void testProcedures (){
+        // Hier wird getestet, ob ein Wertebereich initialisiert wurde
+        TestCall tcall = new TestCall();
+        assertTrue(tcall.testProcedures(),"false");
+
+    }
+
 
 }
