@@ -21,7 +21,7 @@ public class DatabaseTest {
     @DisplayName("Teste Ob Datenbankverbindung möglich")
     public void testConnection (){
         // Hier wird getestet, on die Verbindung möglich ist.
-1
+
         TestCall tcall = new TestCall();
         assertTrue(tcall.isConnected(),"false");
 
