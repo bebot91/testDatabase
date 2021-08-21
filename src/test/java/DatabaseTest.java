@@ -126,7 +126,7 @@ public class DatabaseTest {
     @DisplayName("WEB: Webserver - SMOKETEST - private settings")
     public void testWebserver_Smoke_Private_settings () {
 
-        String url = "http://0.0.0.0:80/CRYBOT/Feautures/private/settings.php";
+        String url = "0.0.0.0:80/CRYBOT/Feautures/private/settings.php";
         TestWeb web = new TestWeb();
         assertTrue(web.Webtester_Smoketest(url),"false");
 
@@ -136,7 +136,7 @@ public class DatabaseTest {
     @DisplayName("WEB: Webserver - SMOKETEST - private products")
     public void testWebserver_Smoke_Private_products () {
 
-        String url = "http://0.0.0.0:80/CRYBOT/Feautures/private/products.php";
+        String url = "0.0.0.0:80/CRYBOT/Feautures/private/products.php";
         TestWeb web = new TestWeb();
         assertTrue(web.Webtester_Smoketest(url),"false");
 
@@ -146,7 +146,7 @@ public class DatabaseTest {
     @DisplayName("WEB: Webserver - SMOKETEST - API coindata")
     public void testWebserver_Smoke_Private_API_Coindata () {
 
-        String url = "http://0.0.0.0:80/CRYBOT/Include/PHP/api/getCoindata.php/1/CRO_USDT";
+        String url = "0.0.0.0:80/CRYBOT/Include/PHP/api/getCoindata.php/1/CRO_USDT";
         TestWeb web = new TestWeb();
         assertTrue(web.Webtester_Smoketest(url),"false");
 
