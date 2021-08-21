@@ -1,0 +1,58 @@
+table.chart {
+  width: 99%;
+
+}
+
+button.chart {
+    width: 100%;
+    height: 135px;
+    background-color: #042347; /* Green */
+    transition-duration: 0.8s;
+    border: none;
+    color: rgb(211, 42, 42);
+    padding: 15px 15px;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+
+  button.chart1 {
+    width: 20%;
+    height: 135px;
+    background-color: #042347; /* Green */
+    transition-duration: 0.8s;
+    border: none;
+    color: rgb(211, 42, 42);
+    padding: 15px 15px;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+
+  }
+
+  button.chart:hover {
+    background-color: rgb(32, 24, 148); /* Green */
+  }
+
+  div.chart {
+    background-color: rgb(70, 62, 185); /* Green */
+    width: 100%;
+    height: 166px;
+    padding: 15px 15px;
+    margin: 2px 2px;
+    float: left;
+    border-radius: 25px;
+    border: 2px;
+    cursor: pointer;
+  }
+

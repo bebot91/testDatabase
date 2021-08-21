@@ -1,0 +1,8 @@
+{
+  "realm": "CRYBOT",
+  "auth-server-url": "http://localhost:8180/auth/",
+  "ssl-required": "none",
+  "resource": "restclient",
+  "public-client": true,
+  "confidential-port": 0
+}
