@@ -72,6 +72,8 @@ public class DatabaseTest {
         assertTrue(tcall.testProcedures_IN_newUser(),"false");
     }
 
+
+    /*
     @Test
     @DisplayName("WEB: Webserver - SMOKETEST - public index")
     public void testWebserver_Smoke_Public_index () {
@@ -151,4 +153,6 @@ public class DatabaseTest {
         assertTrue(web.Webtester_Smoketest(url),"false");
 
     }
+
+     */
 }

@@ -17,6 +17,11 @@ services:
             - 80:80
         depends_on:
             - db
+        healthcheck:
+            test: [ "CMD", "curl", "-f", "http://php-apache-environment:80" ]
+            interval: 10s
+            timeout: 10s
+            retries: 5
 
     ## Mysql Datenbank mit Kundenverwaltung und INitial Load
     db:
@@ -64,9 +69,24 @@ services:
             KEYCLOAK_PASSWORD: Pa55w0rd
         ports:
             - 8180:8080
+        command:
+            - "-b 0.0.0.0"
+            #- "-Dkeycloak.import=/opt/jboss/keycloak/admin_Client.json"
+            - "-Dkeycloak.import=/opt/jboss/keycloak/Master_Realm.json"
+            - "-Dkeycloak.import=/opt/jboss/keycloak/CRYBOT_Realm.json"
+        volumes:
+            - ./Keycloak/imports/crybot:/opt/jboss/keycloak/themes/crybot
+            #- ./imports/admin_Client.json:/opt/jboss/keycloak/admin_Client.json
+            - ./Keycloak/imports/Master_Realm.json:/opt/jboss/keycloak/Master_Realm.json
+            - ./Keycloak/imports/CRYBOT_Realm.json:/opt/jboss/keycloak/CRYBOT_Realm.json
+
         depends_on:
             - postgres
             #- php-apache-environment
-
+        healthcheck:
+            test: [ "CMD", "curl", "-f", "keycloak:8180" ]
+            interval: 10s
+            timeout: 10s
+            retries: 5
 
 
