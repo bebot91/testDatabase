@@ -383,23 +383,18 @@ BEGIN
 	-- Hier wird verhindert dass der Wb mehrfach imortiert wird
 	IF ((select count(*) from User.Wertebereich) < 1) THEN
 
-	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pgbutton','index','Anmelden',	2,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pgbutton','index','Produkte',	3,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pgbutton','index','Wer wir sind',4,now(),now());
     
-	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pgbutton','anmelden','Anmelden',	2,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pgbutton','anmelden','Produkte',	3,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pgbutton','anmelden','Wer wir sind',4,now(),now());
   
-	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pgbutton','login','Anmelden',	2,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pgbutton','login','Produkte',	3,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pgbutton','login','Wer wir sind',4,now(),now());
   
-	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pgbutton','info','Anmelden',	2,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pgbutton','info','Produkte',	3,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pgbutton','info','Wer wir sind',4,now(),now());
   
-	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pgbutton','products','Anmelden',	2,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pgbutton','products','Produkte',	3,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pgbutton','products','Wer wir sind',4,now(),now());
   
@@ -414,23 +409,18 @@ BEGIN
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pgbutton','settup','Produkte',	3,now(),now()); 
    	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pgbutton','settup','Logout',	    4,now(),now()); 
   
-	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pglink','index','CRYBOT/Feautures/public/anmelden.php',2,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pglink','index','CRYBOT/Feautures/public/produkte.php',3,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pglink','index','CRYBOT/Feautures/public/info.php',4,now(),now());
   
-	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pglink','anmelden','/CRYBOT/Feautures/public/anmelden.php',2,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pglink','anmelden','/CRYBOT/Feautures/public/produkte.php',3,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pglink','anmelden','/CRYBOT/Feautures/public/info.php',4,now(),now());
     
-	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pglink','login','/CRYBOT/Feautures/public/anmelden.php',2,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pglink','login','/CRYBOT/Feautures/public/produkte.php',3,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pglink','login','/CRYBOT/Feautures/public/info.php',4,now(),now());
     
-	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pglink','info','/CRYBOT/Feautures/public/anmelden.php',2,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pglink','info','/CRYBOT/Feautures/public/produkte.php',3,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pglink','info','/CRYBOT/Feautures/public/info.php',4,now(),now());
     
-	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pglink','products','/CRYBOT/Feautures/public/anmelden.php',2,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pglink','products','/CRYBOT/Feautures/public/produkte.php',3,now(),now());
 	insert into User.Wertebereich (TabelleAttribut,Herkunft,Bezeichnung,Hardcode,LastDate,GueltigVon) values ('pagedef.pglink','products','/CRYBOT/Feautures/public/info.php',4,now(),now());
 
@@ -447,7 +437,10 @@ BEGIN
     
      insert into User.Coindata (ID_System,KursBez,iRoot,iCall,k1,k2,k3,k)
  					values (1,'CRO_USDT','USDT','CRO',0.112,0.110,0.111,0.110),
-						   (1,'BTC_USDT','USDT','BTC',35.112,36.110,37.111,36.110);
+						   (1,'BTC_USDT','USDT','BTC',35.112,36.110,37.111,36.110),
+						   (1,'ETH_USDT','USDT','ETH',35.112,36.110,37.111,36.110),
+						   (1,'XRP_USDT','USDT','XRP',35.112,36.110,37.111,36.110),
+						   (1,'EOS_USDT','USDT','EOS',35.112,36.110,37.111,36.110);
 
 insert into User.User (ID_UserAccount,ID_UserKK,Aktiv,Art,DatumErstellt) 
 				values (1,'772270f2-61e6-415f-8932-f79c86776ef3',1,1,NOW());

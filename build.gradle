@@ -16,6 +16,7 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.1'
 
     compile 'mysql:mysql-connector-java:8.0.25'
+    compile 'com.accenture.atom:library-dbUtils:0.0.1'
 }
 
 test {
