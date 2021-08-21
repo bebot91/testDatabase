@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DatabaseTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2021-08-21T10:21:33" hostname="DESKTOP-EV6BB6M" time="1.761">
+<testsuite name="DatabaseTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2021-08-21T10:42:36" hostname="DESKTOP-EV6BB6M" time="1.019">
   <properties/>
-  <testcase name="DB: Database - Smoketest" classname="DatabaseTest" time="0.337"/>
+  <testcase name="DB: Database - Smoketest" classname="DatabaseTest" time="0.353"/>
   <testcase name="DB: Database - PROC 3 - sps_GET_MENUEBUTTON" classname="DatabaseTest" time="0.031"/>
-  <testcase name="WEB: Webserver - SMOKETEST - public index" classname="DatabaseTest" time="0.048"/>
-  <testcase name="WEB: Webserver - SMOKETEST - private main" classname="DatabaseTest" time="0.178"/>
-  <testcase name="WEB: Webserver - SMOKETEST - public products" classname="DatabaseTest" time="0.062"/>
-  <testcase name="DB: Database - PROC 4 - sps_IN_newUser" classname="DatabaseTest" time="0.3"/>
-  <testcase name="WEB: Webserver - SMOKETEST - private products" classname="DatabaseTest" time="0.139"/>
-  <testcase name="WEB: Webserver - SMOKETEST - API coindata" classname="DatabaseTest" time="0.205"/>
-  <testcase name="DB: Database - PROC 2 - sps_GET_COINDATA" classname="DatabaseTest" time="0.031"/>
-  <testcase name="WEB: Webserver - SMOKETEST - public information" classname="DatabaseTest" time="0.076"/>
-  <testcase name="WEB: Webserver - SMOKETEST - private welcome" classname="DatabaseTest" time="0.056"/>
-  <testcase name="DB: Database - Initialised" classname="DatabaseTest" time="0.038"/>
-  <testcase name="DB: Database - PROC 1 - sps_GET_LOGIN" classname="DatabaseTest" time="0.097"/>
-  <testcase name="WEB: Webserver - SMOKETEST - private settings" classname="DatabaseTest" time="0.155"/>
+  <testcase name="WEB: Webserver - SMOKETEST - public index" classname="DatabaseTest" time="0.027"/>
+  <testcase name="WEB: Webserver - SMOKETEST - private main" classname="DatabaseTest" time="0.023"/>
+  <testcase name="WEB: Webserver - SMOKETEST - public products" classname="DatabaseTest" time="0.023"/>
+  <testcase name="DB: Database - PROC 4 - sps_IN_newUser" classname="DatabaseTest" time="0.274"/>
+  <testcase name="WEB: Webserver - SMOKETEST - private products" classname="DatabaseTest" time="0.026"/>
+  <testcase name="WEB: Webserver - SMOKETEST - API coindata" classname="DatabaseTest" time="0.025"/>
+  <testcase name="DB: Database - PROC 2 - sps_GET_COINDATA" classname="DatabaseTest" time="0.029"/>
+  <testcase name="WEB: Webserver - SMOKETEST - public information" classname="DatabaseTest" time="0.024"/>
+  <testcase name="WEB: Webserver - SMOKETEST - private welcome" classname="DatabaseTest" time="0.023"/>
+  <testcase name="DB: Database - Initialised" classname="DatabaseTest" time="0.032"/>
+  <testcase name="DB: Database - PROC 1 - sps_GET_LOGIN" classname="DatabaseTest" time="0.099"/>
+  <testcase name="WEB: Webserver - SMOKETEST - private settings" classname="DatabaseTest" time="0.023"/>
   <system-out><![CDATA[fgh
 ]]></system-out>
   <system-err><![CDATA[Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
