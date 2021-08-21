@@ -136,7 +136,7 @@ public class DatabaseTest {
     @DisplayName("WEB: Webserver - SMOKETEST - private products")
     public void testWebserver_Smoke_Private_products () {
 
-        String url = "0.0.0.0:80/CRYBOT/Feautures/private/products.php";
+        String url = "http://0.0.0.0:80/CRYBOT/Feautures/private/products.php";
         TestWeb web = new TestWeb();
         assertTrue(web.Webtester_Smoketest(url),"false");
 
