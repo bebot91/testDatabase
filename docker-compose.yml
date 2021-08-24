@@ -24,7 +24,7 @@ services:
         healthcheck:
             test: [ "CMD", "curl", "-f", "http://php-apache-environment:80" ]
             interval: 10s
-            timeout: 120s
+            timeout: 180s
             retries: 5
         restart: on-failure
 
