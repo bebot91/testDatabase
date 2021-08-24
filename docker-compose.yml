@@ -10,18 +10,23 @@ services:
         container_name: php-apache
         build:
             context: .
-        #image: php:8.0-apache
         volumes:
             - ./Webserver/src:/var/www/html/
         ports:
             - 80:80
         depends_on:
-            - db
+            db:
+                condition: service_healthy #service_started
+            postgres:
+                condition: service_healthy #service_started
+            keycloak:
+                condition: service_started #service_started
         healthcheck:
             test: [ "CMD", "curl", "-f", "http://php-apache-environment:80" ]
             interval: 10s
-            timeout: 10s
+            timeout: 100s
             retries: 5
+        restart: on-failure
 
     ## Mysql Datenbank mit Kundenverwaltung und INitial Load
     db:
@@ -37,13 +42,11 @@ services:
             - 3307:3306
         volumes:
             - ./Database/init:/docker-entrypoint-initdb.d
-
-    ## Adminer (Datenbanktool)
-    adminer:
-        image: adminer
-        restart: always
-        ports:
-            - 8080:8080
+        healthcheck:
+            test: "/usr/bin/mysql --user=root --password=root --execute \"SHOW DATABASES;\""
+            interval: 2s
+            timeout:  2s
+            retries: 3
 
     ## Postgresql (für Keycloak)
     postgres:
@@ -54,6 +57,11 @@ services:
             POSTGRES_DB: keycloak
             POSTGRES_USER: keycloak
             POSTGRES_PASSWORD: password
+        healthcheck:
+            test: ["CMD-SHELL", "pg_isready -U keycloak"]
+            interval: 10s
+            timeout: 2s
+            retries: 5
 
     ## Keycloak Auth Manager
     keycloak:
@@ -71,22 +79,20 @@ services:
             - 8180:8080
         command:
             - "-b 0.0.0.0"
-            #- "-Dkeycloak.import=/opt/jboss/keycloak/admin_Client.json"
             - "-Dkeycloak.import=/opt/jboss/keycloak/Master_Realm.json"
             - "-Dkeycloak.import=/opt/jboss/keycloak/CRYBOT_Realm.json"
         volumes:
             - ./Keycloak/imports/crybot:/opt/jboss/keycloak/themes/crybot
-            #- ./imports/admin_Client.json:/opt/jboss/keycloak/admin_Client.json
             - ./Keycloak/imports/Master_Realm.json:/opt/jboss/keycloak/Master_Realm.json
             - ./Keycloak/imports/CRYBOT_Realm.json:/opt/jboss/keycloak/CRYBOT_Realm.json
 
         depends_on:
-            - postgres
-            #- php-apache-environment
+            postgres:
+                condition: service_healthy #service_started
         healthcheck:
             test: [ "CMD", "curl", "-f", "keycloak:8180" ]
             interval: 10s
-            timeout: 10s
+            timeout: 5s
             retries: 5
 
 
