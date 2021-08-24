@@ -19,12 +19,12 @@ services:
                 condition: service_healthy #service_started
             postgres:
                 condition: service_healthy #service_started
-            keycloak:
-                condition: service_started #service_started
+            #keycloak:
+                #condition: service_started #service_started
         healthcheck:
             test: [ "CMD", "curl", "-f", "http://php-apache-environment:80" ]
-            interval: 10s
-            timeout: 180s
+            interval: 20s
+            timeout: 30s
             retries: 5
         restart: on-failure
 
