@@ -24,7 +24,7 @@ services:
         healthcheck:
             test: [ "CMD", "curl", "-f", "http://php-apache-environment:80" ]
             interval: 10s
-            timeout: 100s
+            timeout: 120s
             retries: 5
         restart: on-failure
 
@@ -92,7 +92,7 @@ services:
         healthcheck:
             test: [ "CMD", "curl", "-f", "keycloak:8180" ]
             interval: 10s
-            timeout: 5s
+            timeout: 3s
             retries: 5
 
 
