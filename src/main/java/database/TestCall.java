@@ -14,12 +14,15 @@ public class TestCall {
         // Hier wird eine einfache Anfrage gesendet, um zu sehen, ob jemand antwortet
         boolean result = false;
         query = " select * from User.Wertebereich; ";
+
         try {
             qresult = db.selectQuery(query);
             result = true;
         } catch (SQLException throwables) {
             result = false;
         }
+
+
         return result;
     }
 
