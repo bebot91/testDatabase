@@ -16,7 +16,7 @@ public class TestWeb {
             String result = new BufferedReader(new InputStreamReader(process.getInputStream()))
                     .lines().collect(Collectors.joining("\n"));
 
-            if (!result.contains("<title>404 Not Found</title>")){
+            if (!result.contains("<title>404 Not Found</title>") && result.length() > 1){
                 isReachable = true;
             }
         } catch (IOException e) {
