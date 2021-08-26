@@ -73,12 +73,11 @@ public class DatabaseTest {
     }
 
 
-    /*
     @Test
     @DisplayName("WEB: Webserver - SMOKETEST - public index")
     public void testWebserver_Smoke_Public_index () {
 
-        String url = "http://0.0.0.0:80";
+        String url = "0.0.0.0:80";
         TestWeb web = new TestWeb();
         assertTrue(web.Webtester_Smoketest(url),"false");
 
@@ -88,12 +87,12 @@ public class DatabaseTest {
     @DisplayName("WEB: Webserver - SMOKETEST - public products")
     public void testWebserver_Smoke_Public_produkte () {
 
-        String url = "http://0.0.0.0:80/CRYBOT/Feautures/public/produkte.php";
+        String url = "php-apache-environment:80/CRYBOT/Feautures/public/produkte.php";
         TestWeb web = new TestWeb();
         assertTrue(web.Webtester_Smoketest(url),"false");
 
     }
-
+    /*
     @Test
     @DisplayName("WEB: Webserver - SMOKETEST - public information")
     public void testWebserver_Smoke_Public_information () {
