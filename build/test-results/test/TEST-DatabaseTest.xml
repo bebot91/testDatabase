@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DatabaseTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2021-08-26T17:48:23" hostname="DESKTOP-EV6BB6M" time="1.663">
+<testsuite name="DatabaseTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2021-08-26T17:53:47" hostname="DESKTOP-EV6BB6M" time="1.632">
   <properties/>
   <testcase name="DB: Database - Smoketest" classname="DatabaseTest" time="0.314"/>
-  <testcase name="DB: Database - PROC 3 - sps_GET_MENUEBUTTON" classname="DatabaseTest" time="0.028"/>
-  <testcase name="WEB: Webserver - SMOKETEST - public index" classname="DatabaseTest" time="0.095"/>
-  <testcase name="WEB: Webserver - SMOKETEST - private main" classname="DatabaseTest" time="0.106"/>
-  <testcase name="WEB: Webserver - SMOKETEST - public products" classname="DatabaseTest" time="0.095"/>
-  <testcase name="DB: Database - PROC 4 - sps_IN_newUser" classname="DatabaseTest" time="0.219"/>
-  <testcase name="WEB: Webserver - SMOKETEST - private products" classname="DatabaseTest" time="0.097"/>
-  <testcase name="WEB: Webserver - SMOKETEST - API coindata" classname="DatabaseTest" time="0.265"/>
-  <testcase name="DB: Database - PROC 2 - sps_GET_COINDATA" classname="DatabaseTest" time="0.023"/>
-  <testcase name="WEB: Webserver - SMOKETEST - public information" classname="DatabaseTest" time="0.102"/>
-  <testcase name="WEB: Webserver - SMOKETEST - private welcome" classname="DatabaseTest" time="0.109"/>
-  <testcase name="DB: Database - Initialised" classname="DatabaseTest" time="0.032"/>
-  <testcase name="DB: Database - PROC 1 - sps_GET_LOGIN" classname="DatabaseTest" time="0.088"/>
-  <testcase name="WEB: Webserver - SMOKETEST - private settings" classname="DatabaseTest" time="0.085"/>
+  <testcase name="DB: Database - PROC 3 - sps_GET_MENUEBUTTON" classname="DatabaseTest" time="0.026"/>
+  <testcase name="WEB: Webserver - SMOKETEST - public index" classname="DatabaseTest" time="0.086"/>
+  <testcase name="WEB: Webserver - SMOKETEST - private main" classname="DatabaseTest" time="0.091"/>
+  <testcase name="WEB: Webserver - SMOKETEST - public products" classname="DatabaseTest" time="0.086"/>
+  <testcase name="DB: Database - PROC 4 - sps_IN_newUser" classname="DatabaseTest" time="0.287"/>
+  <testcase name="WEB: Webserver - SMOKETEST - private products" classname="DatabaseTest" time="0.09"/>
+  <testcase name="WEB: Webserver - SMOKETEST - API coindata" classname="DatabaseTest" time="0.249"/>
+  <testcase name="DB: Database - PROC 2 - sps_GET_COINDATA" classname="DatabaseTest" time="0.026"/>
+  <testcase name="WEB: Webserver - SMOKETEST - public information" classname="DatabaseTest" time="0.069"/>
+  <testcase name="WEB: Webserver - SMOKETEST - private welcome" classname="DatabaseTest" time="0.099"/>
+  <testcase name="DB: Database - Initialised" classname="DatabaseTest" time="0.031"/>
+  <testcase name="DB: Database - PROC 1 - sps_GET_LOGIN" classname="DatabaseTest" time="0.089"/>
+  <testcase name="WEB: Webserver - SMOKETEST - private settings" classname="DatabaseTest" time="0.084"/>
   <system-out><![CDATA[<!DOCTYPE html>
 <html>
 	<body>
@@ -109,8 +109,8 @@ array (
   'filetime' => -1,
   'ssl_verify_result' => 0,
   'redirect_count' => 0,
-  'total_time' => 0.000249,
-  'namelookup_time' => 0.000197,
+  'total_time' => 0.000195,
+  'namelookup_time' => 0.000154,
   'connect_time' => 0.0,
   'pretransfer_time' => 0.0,
   'size_upload' => 0.0,
@@ -135,11 +135,11 @@ array (
   'scheme' => '',
   'appconnect_time_us' => 0,
   'connect_time_us' => 0,
-  'namelookup_time_us' => 197,
+  'namelookup_time_us' => 154,
   'pretransfer_time_us' => 0,
   'redirect_time_us' => 0,
   'starttransfer_time_us' => 0,
-  'total_time_us' => 249,
+  'total_time_us' => 195,
 )error occured during curl exec. Additioanl info: 
 
 <!DOCTYPE html>
@@ -210,8 +210,8 @@ array (
   'filetime' => -1,
   'ssl_verify_result' => 0,
   'redirect_count' => 0,
-  'total_time' => 0.000243,
-  'namelookup_time' => 0.000202,
+  'total_time' => 0.000234,
+  'namelookup_time' => 0.000193,
   'connect_time' => 0.0,
   'pretransfer_time' => 0.0,
   'size_upload' => 0.0,
@@ -236,13 +236,13 @@ array (
   'scheme' => '',
   'appconnect_time_us' => 0,
   'connect_time_us' => 0,
-  'namelookup_time_us' => 202,
+  'namelookup_time_us' => 193,
   'pretransfer_time_us' => 0,
   'redirect_time_us' => 0,
   'starttransfer_time_us' => 0,
-  'total_time_us' => 243,
+  'total_time_us' => 234,
 )error occured during curl exec. Additioanl info: 
-{"datarow1":["0.14984","0.15000084","0.14987083","0.14985767","0.14989184","0.150039","0.14973667","0.149646","0.14962517","0.14971617","0.14991933","0.15006816","0.14998633","0.15001066","0.15008417","0.14998066","0.14998384","0.15007684","0.15009393","0.150247"],"uri":null}
+{"datarow1":["0.14961","0.14981067","0.14984383","0.14984134","0.14992417","0.14984833","0.15000084","0.14987083","0.14985767","0.14989184","0.150039","0.14973667","0.149646","0.14962517","0.14971617","0.14991933","0.15006816","0.14998633","0.15001066","0.15008417"],"uri":null}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -321,8 +321,8 @@ array (
   'filetime' => -1,
   'ssl_verify_result' => 0,
   'redirect_count' => 0,
-  'total_time' => 0.000214,
-  'namelookup_time' => 0.00017,
+  'total_time' => 0.000237,
+  'namelookup_time' => 0.000195,
   'connect_time' => 0.0,
   'pretransfer_time' => 0.0,
   'size_upload' => 0.0,
@@ -347,11 +347,11 @@ array (
   'scheme' => '',
   'appconnect_time_us' => 0,
   'connect_time_us' => 0,
-  'namelookup_time_us' => 170,
+  'namelookup_time_us' => 195,
   'pretransfer_time_us' => 0,
   'redirect_time_us' => 0,
   'starttransfer_time_us' => 0,
-  'total_time_us' => 214,
+  'total_time_us' => 237,
 )error occured during curl exec. Additioanl info: 
 ]]></system-out>
   <system-err><![CDATA[Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.

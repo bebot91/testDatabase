@@ -10,7 +10,7 @@ public class TestWeb {
     public static boolean Webtester_Smoketest (String url) {
 
         boolean isReachable = false;
-        String command = "curl -X POST "+url;
+        String command = "curl -X GET "+url;
         try {
             Process process = Runtime.getRuntime().exec(command);
             String result = new BufferedReader(new InputStreamReader(process.getInputStream()))
