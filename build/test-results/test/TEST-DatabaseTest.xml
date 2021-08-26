@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DatabaseTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2021-08-26T17:03:46" hostname="DESKTOP-EV6BB6M" time="2.339">
+<testsuite name="DatabaseTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2021-08-26T17:07:22" hostname="DESKTOP-EV6BB6M" time="2.347">
   <properties/>
   <testcase name="DB: Database - Smoketest" classname="DatabaseTest" time="0.301"/>
-  <testcase name="DB: Database - PROC 3 - sps_GET_MENUEBUTTON" classname="DatabaseTest" time="0.028"/>
-  <testcase name="WEB: Webserver - SMOKETEST - public index" classname="DatabaseTest" time="0.026"/>
-  <testcase name="WEB: Webserver - SMOKETEST - public products" classname="DatabaseTest" time="1.61"/>
-  <testcase name="DB: Database - PROC 4 - sps_IN_newUser" classname="DatabaseTest" time="0.223"/>
-  <testcase name="DB: Database - PROC 2 - sps_GET_COINDATA" classname="DatabaseTest" time="0.024"/>
-  <testcase name="DB: Database - Initialised" classname="DatabaseTest" time="0.03"/>
-  <testcase name="DB: Database - PROC 1 - sps_GET_LOGIN" classname="DatabaseTest" time="0.093"/>
+  <testcase name="DB: Database - PROC 3 - sps_GET_MENUEBUTTON" classname="DatabaseTest" time="0.031"/>
+  <testcase name="WEB: Webserver - SMOKETEST - public index" classname="DatabaseTest" time="0.036"/>
+  <testcase name="WEB: Webserver - SMOKETEST - public products" classname="DatabaseTest" time="1.612"/>
+  <testcase name="DB: Database - PROC 4 - sps_IN_newUser" classname="DatabaseTest" time="0.236"/>
+  <testcase name="DB: Database - PROC 2 - sps_GET_COINDATA" classname="DatabaseTest" time="0.022"/>
+  <testcase name="DB: Database - Initialised" classname="DatabaseTest" time="0.027"/>
+  <testcase name="DB: Database - PROC 1 - sps_GET_LOGIN" classname="DatabaseTest" time="0.078"/>
   <system-out><![CDATA[fgh
 ]]></system-out>
   <system-err><![CDATA[Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
