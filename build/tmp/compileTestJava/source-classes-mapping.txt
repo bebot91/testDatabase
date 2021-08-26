@@ -1,6 +1,8 @@
 DatabaseTest.java
  DatabaseTest
-WebserverIntegration.java
- WebserverIntegration
-WebserverTest.java
- WebserverTest
+IntegrationTest.java
+ IntegrationTest
+SecurityTest.java
+ SecurityTest
+SmokeTest.java
+ SmokeTest

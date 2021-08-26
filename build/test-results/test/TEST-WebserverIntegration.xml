@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WebserverIntegration" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-26T18:39:30" hostname="DESKTOP-EV6BB6M" time="0.247">
-  <properties/>
-  <testcase name="WEB: Webserver - Integrationtest - API coindata" classname="WebserverIntegration" time="0.247"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
