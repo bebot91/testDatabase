@@ -187,7 +187,7 @@ public class TestCall {
                 &&  tupelsAfterUHist == (tupelsBeforeUHist + 1)
         )
         {
-            System.out.println("fgh");
+
             result = true;
         }
 

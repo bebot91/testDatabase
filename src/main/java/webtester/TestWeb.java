@@ -15,7 +15,7 @@ public class TestWeb {
             Process process = Runtime.getRuntime().exec(command);
             String result = new BufferedReader(new InputStreamReader(process.getInputStream()))
                     .lines().collect(Collectors.joining("\n"));
-
+            System.out.println(result);
             if (!result.contains("<title>404 Not Found</title>") && result.length() > 1){
                 isReachable = true;
             }
