@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DatabaseTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-08-28T07:46:41" hostname="DESKTOP-EV6BB6M" time="0.718">
+<testsuite name="DatabaseTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-08-28T07:52:57" hostname="DESKTOP-EV6BB6M" time="0.707">
   <properties/>
-  <testcase name="DB: Database - Smoketest" classname="DatabaseTest" time="0.307"/>
-  <testcase name="DB: Database - PROC 3 - sps_GET_MENUEBUTTON" classname="DatabaseTest" time="0.026"/>
-  <testcase name="DB: Database - PROC 4 - sps_IN_newUser" classname="DatabaseTest" time="0.218"/>
+  <testcase name="DB: Database - Smoketest" classname="DatabaseTest" time="0.312"/>
+  <testcase name="DB: Database - PROC 3 - sps_GET_MENUEBUTTON" classname="DatabaseTest" time="0.031"/>
+  <testcase name="DB: Database - PROC 4 - sps_IN_newUser" classname="DatabaseTest" time="0.231"/>
   <testcase name="DB: Database - PROC 2 - sps_GET_COINDATA" classname="DatabaseTest" time="0.025"/>
-  <testcase name="DB: Database - Initialised" classname="DatabaseTest" time="0.029"/>
-  <testcase name="DB: Database - PROC 1 - sps_GET_LOGIN" classname="DatabaseTest" time="0.109"/>
+  <testcase name="DB: Database - Initialised" classname="DatabaseTest" time="0.03"/>
+  <testcase name="DB: Database - PROC 1 - sps_GET_LOGIN" classname="DatabaseTest" time="0.074"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
 ]]></system-err>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="IntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-28T07:46:42" hostname="DESKTOP-EV6BB6M" time="0.24">
+<testsuite name="IntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-28T07:52:58" hostname="DESKTOP-EV6BB6M" time="0.255">
   <properties/>
-  <testcase name="WEB: Webserver - Integrationtest - API coindata" classname="IntegrationTest" time="0.24"/>
+  <testcase name="WEB: Webserver - Integrationtest - API coindata" classname="IntegrationTest" time="0.255"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
