@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SecurityTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2021-08-28T07:32:11" hostname="DESKTOP-EV6BB6M" time="0.051">
+<testsuite name="SecurityTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2021-08-28T07:32:37" hostname="DESKTOP-EV6BB6M" time="0.048">
   <properties/>
-  <testcase name="WEB: Webserver - SECURITY - Zugriffskontrolle - Private-Bereich main" classname="SecurityTest" time="0.026">
+  <testcase name="WEB: Webserver - SECURITY - Zugriffskontrolle - Private-Bereich main" classname="SecurityTest" time="0.025">
     <failure message="org.opentest4j.AssertionFailedError: false ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: false ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
@@ -97,7 +97,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="WEB: Webserver - SECURITY - Zugriffskontrolle - Private-Bereich products" classname="SecurityTest" time="0.024">
+  <testcase name="WEB: Webserver - SECURITY - Zugriffskontrolle - Private-Bereich products" classname="SecurityTest" time="0.023">
     <failure message="org.opentest4j.AssertionFailedError: false ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: false ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
