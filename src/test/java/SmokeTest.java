@@ -11,7 +11,7 @@ public class SmokeTest {
     @DisplayName("WEB: Webserver - SMOKETEST - public index")
     public void testWebserver_Smoke_Public_index () {
 
-        String url = "http://localhost:8080";
+        String url = "http://127.0.0.1:8080";
         TestWeb web = new TestWeb();
         assertTrue(web.Webtester_Smoketest(url),"false");
 
@@ -21,7 +21,7 @@ public class SmokeTest {
     @DisplayName("WEB: Webserver - SMOKETEST - public products")
     public void testWebserver_Smoke_Public_produkte () {
 
-        String url = "http://localhost:8080/CRYBOT/Feautures/public/produkte.php";
+        String url = "http://127.0.0.1:8080/CRYBOT/Feautures/public/produkte.php";
 
         TestWeb web = new TestWeb();
         assertTrue(web.Webtester_Smoketest(url),"false");

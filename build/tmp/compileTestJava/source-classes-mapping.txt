@@ -1,8 +1,8 @@
 DatabaseTest.java
  DatabaseTest
-SmokeTest.java
- SmokeTest
-SecurityTest.java
- SecurityTest
 IntegrationTest.java
  IntegrationTest
+SecurityTest.java
+ SecurityTest
+SmokeTest.java
+ SmokeTest
