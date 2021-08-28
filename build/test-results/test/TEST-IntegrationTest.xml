@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="IntegrationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-08-28T07:32:37" hostname="DESKTOP-EV6BB6M" time="0.041">
+<testsuite name="IntegrationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-08-28T07:37:59" hostname="DESKTOP-EV6BB6M" time="0.041">
   <properties/>
   <testcase name="WEB: Webserver - Integrationtest - API coindata" classname="IntegrationTest" time="0.041">
     <failure message="org.opentest4j.AssertionFailedError: false ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: false ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
