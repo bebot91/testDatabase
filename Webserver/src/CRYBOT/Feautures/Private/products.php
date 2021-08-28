@@ -8,34 +8,35 @@ session_start();
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-<link rel="stylesheet" href="../../Include/CSS/style5.css">
-<link rel="stylesheet" href="../../Include/CSS/slider.css">
-<link rel="stylesheet" href="../../Include/CSS/charts.css">
-<link rel="stylesheet" href="../../Include/CSS/table.css">
-
-
-
-<script src="http://localhost:8180/auth/js/keycloak.js"></script>
-<script src="../../Include/JS/keycloak.js"></script>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../Include/CSS/style.css">
+<link rel="stylesheet" href="../../Include/CSS/style5.css">
+<link rel="stylesheet" href="../../Include/CSS/slider.css">
+<link rel="stylesheet" href="../../Include/CSS/table.css">
+
 <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
 <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+
 <script>
             $(document).ready(function() {
                 $('#coinTable').DataTable();
             } );
 </script>
+
 <?php
       include '../../Include/database/DBConnector.php';
       include '../../Include/database/kk.php';
-      include '../../Include/PHP/loginRefEvent.php';    
-
+      include '../../Include/PHP/loginRefEvent.php';
       $DbConn = new DBConnector();
       $tokenHandler = new RefreshEvent();
       $newToken = $tokenHandler->refreshToken($_SESSION["rtoken"]);
@@ -46,41 +47,37 @@ session_start();
 
 
 </head>
-  <body style="background-image: url(../../Include/IMG/bg.jpg);">
-  <header>
-</header>
-
-<?php
-      // Importiere die Headerbar
-      include '../header/headerbar.php';
-    ?>
+<body style="background-image: url(../../Include/IMG/back_klein.jpg);">
 
 <section class="dsec2">
 
+    <!--START MENU -->
+ <div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 
-  <nav class="nhead">
-    hello Test
-  </nav>
-  <article class="ahead">
-    articlefoot
-  </article> 
-  <article class="bar">
-    This is how trading feels like today ... ;D
-    <img src="../../Include/IMG/25117045.webp" alt="" class="imgbar">
+		<aside id="colorlib-aside" role="complementary" class="js-fullheight" style="width: 256px;">
 
-  </article>
-  <nav>
-    <ul>
+  <ul class="nav flex-column">
+					<img src="../../Include/IMG/skizze2.png" width="183" height="auto" class="d-inline-block align-top" alt="Logo from CryBot">
+          <li class="nav-item">
+
     <button class='button button1'; id="index_link"; onclick="openIndex()">Account Management</button>
     <?php
     $DbConn = new DBConnector();
 			$DbConn->get_MENUEBUTTON('main');
       ?>
-    </ul>
-  </nav>
-  <article>
-    <h1>Custom Scrollbar Example</h1>
-    <div style="overflow-y: scroll; height:93%;">
+          </li>
+				</ul>
+
+
+  </aside>
+
+</div> <!-- END MENU -->
+
+
+    <div id="colorlib-main">
+    <section class="ftco-section pt-4 mb-5 ftco-intro">
+    <div style="overflow-y: scroll; height:93%; max-height: 600px;">
 
         <table id="coinTable" class="productRow">
         <thead>
@@ -89,19 +86,19 @@ session_start();
                         <th>Wert </th>
                         <th>Kurs 1</th>
                         <th>Kurs 2</th>
-                        <th>Börse</th>                       
+                        <th>Börse</th>
                         <th>Statistic</th>
                     </tr>
           </thead>
           <tbody>
           <?php
 
-          $Coindata  = $DbConn->get_Coindata('main'); 
+          $Coindata  = $DbConn->get_Coindata('main');
             for ($x = 0; $x <= count($Coindata)-1; $x++) {
 
-              echo "<tr>";
+              echo "<tr     style='background-color: #f1dc85;'>";
                 echo "<td><div style='float:left;'>".$Coindata[$x]["KursBez"]."</div> </td> ";
-                echo "<td><div style='float:left;'>12.5</div> </td> ";
+                echo "<td><div style='float:left;' id='actvalue".$x."'>USDT</div> </td> ";
                 echo "<td><div style='float:left;'>".$Coindata[$x]["iroot"]."</div> </td> ";
                 echo "<td><div style='float:left;'>".$Coindata[$x]["icall"]."</div> </td> ";
                 echo "<td><div style='float:left;'>".$Coindata[$x]["ID_System"]."</div> </td> ";
@@ -111,7 +108,7 @@ session_start();
 
               echo "
               <script>
-              
+
               function rand() {
                 return Math.random();
               }
@@ -120,7 +117,7 @@ session_start();
 
               $(document).ready(function(){
                 TESTER = document.getElementById('tester');
-                
+
                 var data = [
                   {
                     x: [],
@@ -142,41 +139,41 @@ session_start();
                     t: 8,
                     pad: 10
                   },
-                  paper_bgcolor: '#755C86',
-                  plot_bgcolor: '#6600CC'
+                  paper_bgcolor: '#d6bb4c',
+                  plot_bgcolor: '#97812C'
                 };
-              
+
                   Plotly.newPlot('chart".$x."', data, layout);
 
 
                   var cnt = 0;
                   var interval = setInterval(function() {
-                    $.get( 'http://localhost:80/CRYBOT/Include/PHP/api/getCoindata.php/".$Coindata[$x]["ID_System"]."/".$Coindata[$x]["KursBez"]."', function( data ) {
+                    $.get( 'http://localhost:8080/CRYBOT/Include/PHP/api/getCoindata.php/".$Coindata[$x]["ID_System"]."/".$Coindata[$x]["KursBez"]."', function( data ) {
                       var datas = JSON.parse(data);
                       console.log(datas);
                       var d2 = new Array();
                       var d1 = new Array();
 
-                      for (var i = 0; i < 20 ; i ++ ){
-                        
+                      for (var i = 20; i > 0 ; i -- ){
+
                         d2.push(datas.datarow1[i]);
                         d1.push(i);
                     }
-
+                    document.getElementById('actvalue".$x."').innerHTML = 'USDT: ' + datas.datarow1[0];
                     Plotly.update('chart".$x."', {
                       y:        [d2],
                       x:        [d1]
 
                     }, [0])
-                    
+
                     });
 
                     if(++cnt === 100) clearInterval(interval);
-                  }, 900);
+                  }, 1100);
 
 
               });
-              
+
               </script>
               ";
 
@@ -185,12 +182,6 @@ session_start();
 
 
             }
-
-
-            //<div style="width:60%;">
-            //<canvas id="myChart5"></canvas>
-            //<script src="../../Include/JS/chart.js"> </script>
-            //</div>
 
 
 
@@ -203,24 +194,21 @@ session_start();
 <script></script>
 
   </div>
+  </div>
   </article>
-  <nav class="nfoot">
-    hello Test
-  </nav>
-  <article class="afoot">
-    articlefoot
-  </article> 
-
-
 
 
 </section>
+</div>
 
-<footer>
-  <p>Footer</p>
-</footer>
+
+  <script src="../../Include/js/popper.js"></script>
+  <script src="../../Include/js/bootstrap.min.js"></script>
+  <script src="../../Include/js/main.js"></script>
 
   </body>
+
+
   <script>
           document.addEventListener('DOMContentLoaded', () => {
             var y = document.getElementById("index_link");
@@ -234,4 +222,3 @@ session_start();
           }
 </script>
 </html>
-

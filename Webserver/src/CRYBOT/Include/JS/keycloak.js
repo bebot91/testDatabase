@@ -12,7 +12,7 @@ function initKeycloak() {
         sessionStorage.setItem('token',keycloak.token);
         sessionStorage.setItem('rtoken',keycloak.refreshToken); 
         
-        location.href='http://localhost/CRYBOT/Feautures/private/auth.php';
+        location.href='http://localhost:8080/CRYBOT/Feautures/private/auth.php';
 
     }).catch(function() {
         alert('failed11')
@@ -43,5 +43,5 @@ var refreshToken = function() {
 }
 
 var logout = function() {
-    keycloak.logout({"redirectUri":"http://localhost:80/"});
+    keycloak.logout({"redirectUri":"http://localhost:8080/"});
 }

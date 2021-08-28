@@ -25,6 +25,6 @@ session_start();
               }
               })
 
-              location.href='http://localhost/CRYBOT/Feautures/private/Welcome.php';
+              location.href='http://localhost:8080/CRYBOT/Feautures/private/Welcome.php';
             };
     </script>

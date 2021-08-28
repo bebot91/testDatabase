@@ -25,22 +25,22 @@ tr.productRow {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 25px;
+    width: 10px;
   }
-  
+
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
+    box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
   }
-   
+
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(10, 23, 97); 
+    background:#97812C;
     border-radius: 10px;
   }
-  
+
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #b30000; 
+    background: #d6bb4c;
   }

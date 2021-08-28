@@ -50,7 +50,7 @@ session_start();
     <ul>
     <?php
       $DbConn = new DBConnector();
-      echo "<button class='button button1'; onclick= location.href='http://localhost/CRYBOT/Feautures/private/login.php'; >Login</button>";
+      echo "<button class='button button1'; onclick= location.href='http://localhost:8080/CRYBOT/Feautures/private/login.php'; >Login</button>";
 			$DbConn->get_MENUEBUTTON('login');
     ?>
     </ul>

@@ -3,8 +3,12 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-<link rel="stylesheet" href="CRYBOT/Include/CSS/style5.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="CRYBOT/Include/CSS/style.css">
+<link rel="stylesheet" href="CRYBOT/Include/CSS/style7.css">
 <link rel="stylesheet" href="CRYBOT/Include/CSS/slider.css">
 <link rel="stylesheet" href="CRYBOT/Include/CSS/table.css">
 
@@ -16,76 +20,62 @@
     ?>
 
 </head >
-  <body style="background-image: url(CRYBOT/Include/IMG/bg.jpg);">
-  <header>
-</header>
+
+  <body style="background-image: url(CRYBOT/Include/IMG/back_klein.jpg);">
 
 <section class="dsec1">
-<img src="CRYBOT/Include/IMG/skizze2.png" alt="" class="imglogo">
-
-    <label class="switch">
-  <input type="checkbox">
-  <span class="slider"></span>
-</label>
-
 </section>
-
 
 <section class="dsec2">
 
+  <!--START MENU -->
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="js-fullheight" style="width: 256px;">
 
-  <nav class="nhead">
-    hello Test
-  </nav>
-  <article class="ahead">
-    articlefoot
-  </article> 
-  <article class="bar">
-    This is how trading feels like today ... ;D
-    <img src="CRYBOT/Include/IMG/25117045.webp" alt="" class="imgbar">
+				<ul class="nav flex-column">
+					<img src="CRYBOT/Include/IMG/skizze2.png" width="183" height="auto" class="d-inline-block align-top" alt="Logo from CryBot">
+          <li class="nav-item">
 
-
-
-  </article>
-  <nav>
-    <ul>
-    <?php
+          <?php
       $DbConn = new DBConnector();
-      echo "<button class='button button1'; onclick= location.href='http://localhost/CRYBOT/Feautures/private/login.php'; >Login</button>";
+      echo "<button class='button button1'; onclick= location.href='http://localhost:8080/CRYBOT/Feautures/private/login.php'; >Login</button>";
+
+
+      //Button like login with Keycloak to make it
+
 			$DbConn->get_MENUEBUTTON('index');
+          ?>
+				  </li>
+				</ul>
 
-    ?>
-    </ul>
-  </nav>
+		</aside>
 
-  <article class="centr">
-    <h1>London</h1>
-      <caption>
-      <p >London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+		</div> <!-- END MENU -->
+
+    <div id="colorlib-main">
+			<section class="ftco-section pt-4 mb-5 ftco-intro">
+				<div class="container-fluid px-3 px-md-0">
+					<div class="row">
+						<div class="col-md-12 mb-4">
+							<h1 class="h2">London</h1>
+							<p><p >London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
       <p >Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.
       Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.
       Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.
-
       </p>
-      </caption>
-  </article>
-
-
-  <nav class="nfoot">
-    hello Test
-  </nav>
-  <article class="afoot">
-    articlefoot
-  </article> 
-
-
+					</div>
+				</div>
+        </div>
 
 
 </section>
+</div>
 
-<footer>
-  <p>Footer</p>
-</footer>
+<script src="CRYBOT/Include/js/jquery.min.js"></script>
+  <script src="CRYBOT/Include/js/popper.js"></script>
+  <script src="CRYBOT/Include/js/bootstrap.min.js"></script>
+  <script src="CRYBOT/Include/js/main.js"></script>
 
   </body>
 </html>

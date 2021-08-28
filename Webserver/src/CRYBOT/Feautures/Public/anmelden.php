@@ -38,7 +38,7 @@ session_start();
   </nav>
   <article class="ahead">
     articlefoot
-  </article> 
+  </article>
   <article class="bar">
     Why don't u come in ?
     <img src="../../Include/IMG/19780831.webp" alt="" class="imgbar">
@@ -61,7 +61,7 @@ session_start();
             <input type="text" class="half" text="Nachname"value="Nachname">
             Geburtsdatum: <input type="date" name="Geburtsdatum" class = "full"
             value="2000-01-01"
-            min="1920-01-01" 
+            min="1920-01-01"
             max="2005-12-31"
             ><br>
 
@@ -90,7 +90,7 @@ session_start();
   </nav>
   <article class="afoot">
     articlefoot
-  </article> 
+  </article>
 
 
 

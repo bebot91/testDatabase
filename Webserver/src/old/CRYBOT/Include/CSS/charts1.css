@@ -1,0 +1,16 @@
+
+
+button.chart {
+    width:75%;
+    background-color: #0f270f; /* Green */
+    transition-duration: 0.8s;
+    border: none;
+    color: rgb(211, 42, 42);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    cursor: pointer;
+  }

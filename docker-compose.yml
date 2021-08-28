@@ -13,7 +13,7 @@ services:
         volumes:
             - ./Webserver/src:/var/www/html/
         ports:
-            - 80:80
+            - 8080:80
         depends_on:
             db:
                 condition: service_started #service_started
@@ -22,7 +22,7 @@ services:
             #keycloak:
                 #condition: service_started #service_started
         healthcheck:
-            test: [ "CMD", "curl", "-f", "http://php-apache-environment:80" ]
+            test: [ "CMD", "curl", "-f", "http://php-apache-environment:8080" ]
             interval: 20s
             timeout: 30s
             retries: 5

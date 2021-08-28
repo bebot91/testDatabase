@@ -1,0 +1,299 @@
+
+	:root {
+		--web-view-ids: Login;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Login {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Login;
+		--web-view-id: Login;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#executium-pCMWBd6UfYo-unsplash {
+		opacity: 0.75;
+		position: absolute;
+		width: 1624px;
+		height: 1080px;
+		left: 316px;
+		top: 0px;
+		overflow: visible;
+	}
+	#ButtonDefaultPrimary {
+		position: absolute;
+		width: 87px;
+		height: 38px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Primary__007BFF {
+		fill: rgba(0,123,255,1);
+	}
+	.Primary__007BFF {
+		position: absolute;
+		overflow: visible;
+		width: 87px;
+		height: 38px;
+		left: 0px;
+		top: 0px;
+	}
+	#Primary {
+		left: 16px;
+		top: 10px;
+		position: absolute;
+		overflow: visible;
+		width: 56px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#Base {
+		fill: rgba(151,129,44,1);
+	}
+	.Base {
+		overflow: visible;
+		position: absolute;
+		width: 316px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#ANMELDEN {
+		left: 59px;
+		top: 290px;
+		position: absolute;
+		overflow: visible;
+		width: 84px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Homepage.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#REGISTRIEREN {
+		left: 59px;
+		top: 337px;
+		position: absolute;
+		overflow: visible;
+		width: 114px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Registrieren.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#BER_UNS {
+		left: 59px;
+		top: 384px;
+		position: absolute;
+		overflow: visible;
+		width: 79px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: _ber_uns.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#Raggruppa_349 {
+		position: absolute;
+		width: 79px;
+		height: 73px;
+		left: 93px;
+		top: 38px;
+		overflow: visible;
+	}
+	#Rettangolo_1100 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rettangolo_1100 {
+		position: absolute;
+		overflow: visible;
+		width: 79px;
+		height: 73px;
+		left: 0px;
+		top: 0px;
+	}
+	#LOGO {
+		left: 18px;
+		top: 28px;
+		position: absolute;
+		overflow: visible;
+		width: 44px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(38,153,251,1);
+	}
+	#social {
+		position: absolute;
+		width: 88.01px;
+		height: 16.001px;
+		left: 68.99px;
+		top: 1024px;
+		overflow: visible;
+	}
+	#Componente_13__4 {
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Tracciato_3 {
+		fill: rgba(255,255,255,1);
+	}
+	.Tracciato_3 {
+		overflow: visible;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Componente_12__4 {
+		position: absolute;
+		width: 16.01px;
+		height: 16px;
+		left: 36px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rettangolo_393 {
+		fill: transparent;
+	}
+	.Rettangolo_393 {
+		position: absolute;
+		overflow: visible;
+		width: 16px;
+		height: 16px;
+		left: 0.01px;
+		top: 0px;
+	}
+	#Tracciato_2 {
+		fill: rgba(255,255,255,1);
+	}
+	.Tracciato_2 {
+		overflow: visible;
+		position: absolute;
+		width: 16px;
+		height: 12.978px;
+		left: 0px;
+		top: 1.999px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Componente_11__4 {
+		position: absolute;
+		width: 16px;
+		height: 16.001px;
+		left: 72.01px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rettangolo_392 {
+		fill: transparent;
+	}
+	.Rettangolo_392 {
+		position: absolute;
+		overflow: visible;
+		width: 16px;
+		height: 16px;
+		left: 0px;
+		top: 0px;
+	}
+	#Tracciato_1 {
+		fill: rgba(255,255,255,1);
+	}
+	.Tracciato_1 {
+		overflow: visible;
+		position: absolute;
+		width: 8.356px;
+		height: 16px;
+		left: 3.99px;
+		top: 0.001px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#CRYBOTCH {
+		left: 69px;
+		top: 984px;
+		position: absolute;
+		overflow: visible;
+		width: 185px;
+		height: 40px;
+		line-height: 24px;
+		margin-top: -5px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#HOME {
+		left: 59px;
+		top: 243px;
+		position: absolute;
+		overflow: visible;
+		width: 46px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+</style>
