@@ -32,14 +32,15 @@ public class TestWeb {
 
     public static boolean Webtester_Zugriff (String url) {
 
-        boolean isReachable = false;
+        boolean isReachable = true;
         String command = "curl -X GET "+url;
         try {
             Process process = Runtime.getRuntime().exec(command);
             String result = new BufferedReader(new InputStreamReader(process.getInputStream()))
                     .lines().collect(Collectors.joining("\n"));
+
             if (result.contains("<b>Warning</b>") && result.contains(" Undefined array key \"rtoken\" ")){
-                isReachable = true;
+                isReachable = false;
             }
         } catch (IOException e) {
             e.printStackTrace();

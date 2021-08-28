@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SmokeTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2021-08-28T07:37:59" hostname="DESKTOP-EV6BB6M" time="1.035">
+<testsuite name="SmokeTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2021-08-28T07:42:50" hostname="DESKTOP-EV6BB6M" time="1.119">
   <properties/>
-  <testcase name="WEB: Webserver - SMOKETEST - public index" classname="SmokeTest" time="0.066"/>
-  <testcase name="WEB: Webserver - SMOKETEST - private main" classname="SmokeTest" time="0.186"/>
-  <testcase name="WEB: Webserver - SMOKETEST - public products" classname="SmokeTest" time="0.106"/>
-  <testcase name="WEB: Webserver - SMOKETEST - private products" classname="SmokeTest" time="0.25"/>
-  <testcase name="WEB: Webserver - SMOKETEST - public information" classname="SmokeTest" time="0.074"/>
-  <testcase name="WEB: Webserver - SMOKETEST - private welcome" classname="SmokeTest" time="0.077"/>
-  <testcase name="KEYKLOAK: Keycloak - SMOKETEST - Auth" classname="SmokeTest" time="0.048"/>
-  <testcase name="WEB: Webserver - SMOKETEST - private settings" classname="SmokeTest" time="0.223"/>
+  <testcase name="WEB: Webserver - SMOKETEST - public index" classname="SmokeTest" time="0.09"/>
+  <testcase name="WEB: Webserver - SMOKETEST - private main" classname="SmokeTest" time="0.217"/>
+  <testcase name="WEB: Webserver - SMOKETEST - public products" classname="SmokeTest" time="0.125"/>
+  <testcase name="WEB: Webserver - SMOKETEST - private products" classname="SmokeTest" time="0.221"/>
+  <testcase name="WEB: Webserver - SMOKETEST - public information" classname="SmokeTest" time="0.102"/>
+  <testcase name="WEB: Webserver - SMOKETEST - private welcome" classname="SmokeTest" time="0.078"/>
+  <testcase name="KEYKLOAK: Keycloak - SMOKETEST - Auth" classname="SmokeTest" time="0.067"/>
+  <testcase name="WEB: Webserver - SMOKETEST - private settings" classname="SmokeTest" time="0.216"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
