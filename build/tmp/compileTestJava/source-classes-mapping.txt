@@ -2,7 +2,7 @@ DatabaseTest.java
  DatabaseTest
 IntegrationTest.java
  IntegrationTest
-SecurityTest.java
- SecurityTest
 SmokeTest.java
  SmokeTest
+SecurityTest.java
+ SecurityTest

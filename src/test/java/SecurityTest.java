@@ -19,7 +19,7 @@ public class SecurityTest {
     @DisplayName("WEB: Webserver - SECURITY - Zugriffskontrolle - Private-Bereich products ")
     public void testWebserver_Logic_Private_products () {
         // Ohne Authentifizierung muss ein Error ausgegeben werden und der COntent nicht geladen werden.
-        String url = "0.0.0.0:8080/CRYBOT/Feautures/private/products.php";
+        String url = "http://0.0.0.0:8080/CRYBOT/Feautures/private/products.php";
         TestWeb web = new TestWeb();
         assertTrue(web.Webtester_Zugriff(url),"false");
 

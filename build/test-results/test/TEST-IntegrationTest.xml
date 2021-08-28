@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="IntegrationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-08-28T07:18:22" hostname="DESKTOP-EV6BB6M" time="3.268">
+<testsuite name="IntegrationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-08-28T07:24:32" hostname="DESKTOP-EV6BB6M" time="3.289">
   <properties/>
-  <testcase name="WEB: Webserver - Integrationtest - API coindata" classname="IntegrationTest" time="3.268">
+  <testcase name="WEB: Webserver - Integrationtest - API coindata" classname="IntegrationTest" time="3.289">
     <failure message="org.opentest4j.AssertionFailedError: false ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: false ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)

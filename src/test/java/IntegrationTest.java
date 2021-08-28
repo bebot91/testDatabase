@@ -10,7 +10,7 @@ public class IntegrationTest {
     @DisplayName("WEB: Webserver - Integrationtest - API coindata")
     public void testWebserver_Smoke_Private_API_Coindata () {
 
-        String url = "http://localhost:80/CRYBOT/Include/PHP/api/getCoindata.php/1/CRO_USDT";
+        String url = "http://0.0.0.0:8080/CRYBOT/Include/PHP/api/getCoindata.php/1/CRO_USDT";
         TestWeb web = new TestWeb();
         assertTrue(web.Webtester_API(url),"false");
 
