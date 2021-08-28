@@ -59,7 +59,7 @@ public class SmokeTest {
     @DisplayName("WEB: Webserver - SMOKETEST - private settings")
     public void testWebserver_Smoke_Private_settings () {
 
-        String url = "http://0.0.0.0:8080/CRYBOT/Feautures/private/settings.php";
+        String url = "0.0.0.0:8080/CRYBOT/Feautures/private/settings.php";
         TestWeb web = new TestWeb();
         assertTrue(web.Webtester_Smoketest(url),"false");
 
@@ -69,7 +69,7 @@ public class SmokeTest {
     @DisplayName("WEB: Webserver - SMOKETEST - private products")
     public void testWebserver_Smoke_Private_products () {
 
-        String url = "http://0.0.0.0:8080/CRYBOT/Feautures/private/products.php";
+        String url = "http://localhost:8080/CRYBOT/Feautures/private/products.php";
         TestWeb web = new TestWeb();
         assertTrue(web.Webtester_Smoketest(url),"false");
 
@@ -79,7 +79,7 @@ public class SmokeTest {
     @DisplayName("KEYKLOAK: Keycloak - SMOKETEST - Auth")
     public void testKeycloak_Smoke_Auth () {
 
-        String url = "http://0.0.0.0:8180/auth/";
+        String url = "http://localhost:8180/auth/";
         TestWeb web = new TestWeb();
         assertTrue(web.Webtester_Smoketest(url),"false");
 
